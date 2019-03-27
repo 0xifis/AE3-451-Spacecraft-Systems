@@ -13,15 +13,16 @@ __Complete System__
 7. Introduction to Astrodynamics
 8. Spacecraft Design and Siziing
 9. Ground Syste Design and Sizing
+
 __Subsystems__
-10. Attitude Determination and Control
-11. Telemetry Tracking and Command
-12. Command and Data Handling
-13. Power
-14. Therma
-15. Structures and Mechanisms
-16. Guidance and Navigation
-17. Propulsion
+1. Attitude Determination and Control
+2. Telemetry Tracking and Command
+3. Command and Data Handling
+4. Power
+5. Therma
+6. Structures and Mechanisms
+7. Guidance and Navigation
+8. Propulsion
 
 ### License
 The content of this project is licensed under the [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)](https://creativecommons.org/licenses/by-nc-sa/4.0/) license. However, the source code used to display and format the content is licensed under the [The LaTeX Project Public License
