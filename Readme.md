@@ -12,14 +12,14 @@ __Complete System__
 6. Launch Vehicle Design
 7. Introduction to Astrodynamics
 8. Spacecraft Design and Siziing
-9. Ground Syste Design and Sizing
+9. Ground System Design and Sizing
 
 __Subsystems__
 1. Attitude Determination and Control
 2. Telemetry Tracking and Command
 3. Command and Data Handling
 4. Power
-5. Therma
+5. Thermal
 6. Structures and Mechanisms
 7. Guidance and Navigation
 8. Propulsion

@@ -1,0 +1,87 @@
+\section{Introduction to Astrodynamics}
+
+\subsection{2-body Problem}
+\begin{equation}
+  \vec{\ddot{r}} = -\frac{G(M+m)}{r^3}\vec{r}
+\end{equation}
+Using $\mu = GM$,
+\begin{equation}
+  \vec{\ddot{r}} + \frac{\mu}{r^3}\vec{r} = 0
+\end{equation}
+
+\subsection{Elliptic Orbit Equations}
+\begin{equation}
+  b=a\sqrt{1-e^2}
+\end{equation}
+\begin{equation}
+  p=b^2/a = a(1-e^2)
+\end{equation}
+\begin{equation}
+  h=\sqrt{\mu p}
+\end{equation}
+\begin{equation}
+  \epsilon=\frac{v^2}{2}-\frac{GM}{r}=-\frac{\mu}{2a}
+\end{equation}
+
+\subsection{Motion of a Satellite in Orbit}
+\begin{equation}
+  r = \frac{h^2/\mu}{1+E/\mu\cos(\nu)} = \frac{p}{1+e\cos(\nu)}
+\end{equation}
+where $p=b^2/a$ is the semi-latus rectum.
+
+\subsection{Vis-Viva Equation}
+Using Eq 1.6 and $h=r_pv_p=r_av_a$,
+\begin{equation}
+  \frac{1}{2}v_a^2=GM \frac{r_p}{r_a(r_p+r_a)}
+\end{equation}
+Therefore,
+\begin{equation}
+  v^2 = gM(\frac{2}{r}-\frac{1}{a})
+\end{equation}
+
+\subsection{Kepler's Equation}
+\begin{equation}
+  x=r\cos(\nu) = a(\cos(E)-e) \qquad y=r\sin(\nu) = a\sqrt{1-e^2}\sin(E)
+\end{equation}
+Using Eq. 1.5,
+\begin{equation}
+  E(t) - e\sin(E(t))=n(t-t_p) \longrightarrow M(t) = M_0 + n(t-t_p)
+\end{equation}
+where $n=\sqrt{\frac{\mu}{a^3}}$
+\begin{equation}
+  T=\frac{2\pi}{n}
+\end{equation}
+\textbf{In Orbital Elements}
+\begin{equation}
+  \vec{r} = \begin{pmatrix}
+       a(\cos(E)-e)\\
+       a\sqrt{1-e^2}\sin(E)\\
+       0
+       \end{pmatrix} \qquad
+  \vec{v} = \frac{an}{1-e\cos(E)}\begin{pmatrix}
+       -\sin(E)\\
+       a\sqrt{1-e^2}\cos(E)\\
+       0
+       \end{pmatrix}
+\end{equation}
+
+\subsection{Orbital Perturbations}
+
+\begin{equation}
+  \frac{d\epsilon}{dt} = \vec{v}\cdot\vec{a_p} = \frac{\mu}{2a^2}\frac{da}{dt}
+\end{equation}
+\textbf{Atmospheric Drag}
+\begin{equation}
+  \vec{F_d} = -\frac{1}{2}C_dA\rho v^2\frac{\vec{v}}{v} \qquad \vec{a_p} = -\frac{C_dA}{2m}\rho v\vec{v}
+\end{equation}
+\begin{equation}
+  \therefore \frac{da}{dt}=-\rho\sqrt{\mu a}\frac{C_dA}{m}
+\end{equation}
+\textbf{J2 Perturbation}
+\begin{equation}
+  \frac{d\Omega}{dt}=-\frac{3nJ_2R_e^2}{2a^2(1-e^2)^2}\cos(i)
+\end{equation}
+\begin{equation}
+  \frac{d\omega}{dt}=\frac{2nJ_2R_e^2}{2a^2(1-e^2)^2}\left(\frac{5}{2}\sin^2(i)-2\right)
+\end{equation}
+where $J_2=0.001082$
