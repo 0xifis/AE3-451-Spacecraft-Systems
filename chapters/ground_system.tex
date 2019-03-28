@@ -1,0 +1,19 @@
+\section{Ground System Design and Sizing}
+
+\subsection{Required Coverage}
+For a typical satellite in LEO, it is in view for only \textbf{12.3} minutes. Therefore,
+\begin{equation}
+  \text{required rate for dumping data} = \frac{\text{revisit period} \times \text{data production rate}}{12.3 \text{min}}
+\end{equation}
+
+\subsection{Link Design}
+\begin{equation}
+  \frac{E_b}{N_o}=\frac{PL_tG_tL_sL_aG_r}{kT_sR} \longrightarrow \frac{E_b}{N_o}=P + L_t+G_t+L_s+L_a+G_r+228.6-10\log{T_s}-10\log{R}
+\end{equation}
+The Effective Isotropic Radiated Power (EIRP) is
+\begin{equation}
+  EIRP = P + L_l+G_t
+\end{equation}
+where $L_l=-1dB$ and $G_t\approx44.3-10\log{\theta_x\theta_y}$.
+THe transmission path loss, $L_a$, is obtained from a specific height to the top of the atmosphere graph.
+The space loss, $L_s = 147.55-20\log{S} - 20\log{f}$ and receiver antenna gain, $G_r=-159.59+20\log{D}+20\log{f}+10\log{\eta}$.
